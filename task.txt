@@ -1,0 +1,16 @@
+server commands:
+
+put progname <source files> [-f]:
+    - upload source files from client to server. -f flag will overwrite existing files.
+
+get progname <sourcefile>:
+    - download progname from remote server
+
+run progname [args] [-f] localfile:
+    compile and run an executable with the args, and either print the return, or to the local client file
+
+list [-l] [progname]:
+    list the prognames on the server or files in the given progname directory to the screen, -l == long list (same as unix)
+
+sys:
+    return the name and version of the OS ans CPU type
